@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap onto next line */
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    flex-basis: 100%; /* Makes the title take up the full width on small screens */
+}
+
+#todo-form {
+    display: flex;
+    flex-direction: column; /* Stacks inputs vertically */
+    align-items: stretch; /* Aligns children along the cross axis */
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Adds spacing between input and button */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#edit-task-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stacks inputs vertically */
+    align-items: stretch; /* Aligns children along the cross axis */
+}
+
+#edit-task-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Adds spacing between input and button */
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-list li {
+    background-color: #e9ecef;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todo-list li button {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#todo-list li button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+#logout-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    order: 2;
+    margin-bottom: 10px;
+}
+
+#logout-btn:hover {
+    background-color: #c82333;
+}
